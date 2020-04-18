@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fecha</title>
+</head>
+<body>
+    <form action="#" th:action="@{fecha}" th:object="${fecha}" method="post">
+        <p>
+            Dia: <input type="number" th:field="*{dia}">
+        </p>
+        <p>
+            Mes: <input type="number" th:field="*{mes}">
+        </p>
+        <p>
+            Annio: <input type="number" th:field="*{annio}">
+        </p>
+        <p>
+            <input type="submit" th:value="Enviar"> <input type="reset" value="borrar">
+        </p>
+
+    </form>
+    <h1>Jose Alejandro Olmedo Araniva 00097017</h1>
+</body>
+</html>
